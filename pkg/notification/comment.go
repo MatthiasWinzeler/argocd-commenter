@@ -58,7 +58,7 @@ func filterPullRequestsRelatedToEvent(pulls []github.PullRequest, e Event) []int
 
 func isPullRequestRelatedToEvent(pull github.PullRequest, e Event) bool {
 	for _, file := range pull.Files {
-		if strings.HasPrefix(file, e.Application.Spec.Source.Path) {
+		if e.Application.Spec.Source.Path == "." || strings.HasPrefix(file, e.Application.Spec.Source.Path) {
 			return true
 		}
 	}
