@@ -3,14 +3,15 @@ module github.com/int128/argocd-commenter
 go 1.16
 
 require (
-	github.com/argoproj/argo-cd/v2 v2.3.3
-	github.com/argoproj/gitops-engine v0.6.2
+	github.com/argoproj/argo-cd/v2 v2.4.9
+	github.com/argoproj/gitops-engine v0.7.1
 	github.com/go-logr/logr v1.2.3
+	github.com/google/go-cmp v0.5.8
 	github.com/google/go-github/v39 v39.2.0
 	github.com/int128/oauth2-github-app v0.1.0
 	github.com/onsi/ginkgo v1.16.5
-	github.com/onsi/gomega v1.18.1
-	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
+	github.com/onsi/gomega v1.19.0
+	golang.org/x/oauth2 v0.0.0-20220808172628-8227340efae7
 	k8s.io/api v0.23.3
 	k8s.io/apimachinery v0.23.3
 	k8s.io/client-go v11.0.1-0.20190816222228-6d55c1b1f1ca+incompatible
